@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evidencias — MI PORTAFOLIO</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__brand">
+      <span class="navbar__logo-icon">🌸</span>
+      <span class="navbar__title">MI PORTAFOLIO</span>
+    </div>
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="navbar__link">INICIO</a>
+      <a href="presentacion.html" class="navbar__link">PRESENTACIÓN</a>
+      <a href="competencias.html" class="navbar__link">COMPETENCIAS</a>
+      <a href="evidencias.html" class="navbar__link">EVIDENCIAS</a>
+      <a href="contacto.html" class="navbar__link">CONTACTO</a>
+    </nav>
+    <button class="navbar__hamburger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <a href="index.html" class="back-link">← Volver al inicio</a>
+      <span class="page-hero__badge">🎬 Mi trabajo</span>
+      <h1 class="page-hero__title">Evidencias</h1>
+      <p class="page-hero__desc">Material que demuestra mi aprendizaje y desarrollo a lo largo del ciclo.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="ev-grid">
+        <div class="ev-card reveal reveal--left">
+          <div class="ev-card__thumb ev-card__thumb--video">
+            <div class="ev-card__play">▶</div>
+          </div>
+          <div class="ev-card__body">
+            <span class="ev-card__tag">VIDEO</span>
+            <h3 class="ev-card__title">Mi presentación en video</h3>
+            <p class="ev-card__desc">Resumen audiovisual de mis aprendizajes y experiencias más destacadas durante el ciclo.</p>
+            <a href="#" class="btn btn--pink">Ver video 🎬</a>
+          </div>
+        </div>
+        <div class="ev-card reveal reveal--right">
+          <div class="ev-card__thumb ev-card__thumb--doc">
+            <div class="ev-card__play">📄</div>
+          </div>
+          <div class="ev-card__body">
+            <span class="ev-card__tag ev-card__tag--purple">DOCUMENTOS</span>
+            <h3 class="ev-card__title">Trabajos y proyectos</h3>
+            <p class="ev-card__desc">Colección de trabajos académicos que evidencian las competencias adquiridas en corporeidad.</p>
+            <a href="#" class="btn btn--purple">Ver documentos 📁</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact">
+    <div class="container container--center reveal">
+      <div class="section__head">
+        <span class="section__tag">💬 Hablemos</span>
+        <h2 class="section__title">¿Tienes alguna pregunta?</h2>
+        <p class="section__desc">Me encantaría conocer tu opinión.</p>
+      </div>
+      <a href="contacto.html" class="btn btn--whatsapp">Ir a contacto 💬</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">Mi Portafolio · Corporeidad y Motricidad</p>
+    <p class="footer__sub">Hecho con 🌸 y dedicación</p>
+  </footer>
+
+  <button class="scrolltop" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+  <script>
+    const stBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', ()=> stBtn.classList.toggle('scrolltop--show', window.scrollY > 400));
+    stBtn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+  </script>
+</body>
+</html>
