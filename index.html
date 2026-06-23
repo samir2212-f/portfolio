@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MI PORTAFOLIO — Corporeidad y Motricidad</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <header class="navbar">
+    <div class="navbar__brand">
+      <span class="navbar__logo-icon">🌸</span>
+      <span class="navbar__title">MI PORTAFOLIO</span>
+    </div>
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="navbar__link">INICIO</a>
+      <a href="presentacion.html" class="navbar__link">PRESENTACIÓN</a>
+      <a href="competencias.html" class="navbar__link">COMPETENCIAS</a>
+      <a href="evidencias.html" class="navbar__link">EVIDENCIAS</a>
+      <a href="contacto.html" class="navbar__link">CONTACTO</a>
+    </nav>
+    <button class="navbar__hamburger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </header>
+
+  <!-- ══ BANNER IMAGEN CON EFECTO CUADRITOS ══ -->
+  <section class="img-banner">
+    <div class="img-banner__bg" style="background-image: url('imagen1.png');"></div>
+    <div class="img-banner__tiles" id="banner-tiles"></div>
+    <div class="img-banner__overlay-text">
+      <div class="banner-scroll-wrap">
+        <div class="banner-scroll">
+          ✨ BIENVENIDOS A MI MUNDO DE APRENDIZAJES ✨ &nbsp;&nbsp;&nbsp;
+          🌸 MOVIMIENTO · EQUILIBRIO · COORDINACIÓN · APRENDIZAJE · AUTONOMÍA 🌸 &nbsp;&nbsp;&nbsp;
+          ✨ BIENVENIDOS A MI MUNDO DE APRENDIZAJES ✨ &nbsp;&nbsp;&nbsp;
+          🌸 MOVIMIENTO · EQUILIBRIO · COORDINACIÓN · APRENDIZAJE · AUTONOMÍA 🌸 &nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ HERO / INTRO ══ -->
+  <section class="page-hero" style="margin-top:0;">
+    <div class="page-hero__inner">
+      <span class="page-hero__badge">🌷 Educación Física · Corporeidad y Motricidad</span>
+      <h1 class="page-hero__title">Bienvenidos a mi portafolio digital</h1>
+      <p class="page-hero__desc">Un espacio donde comparto mi proceso de aprendizaje, mis competencias y las evidencias de mi crecimiento personal y académico.</p>
+      <div class="stats">
+        <div class="stat"><div class="stat__num" data-count="5">0</div><div class="stat__label">Competencias</div></div>
+        <div class="stat"><div class="stat__num" data-count="2">0</div><div class="stat__label">Evidencias</div></div>
+        <div class="stat"><div class="stat__num" data-count="100">0</div><div class="stat__label">% Dedicación</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ HUB DE NAVEGACIÓN ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">🧭 Explora</span>
+        <h2 class="section__title">Recorre mi portafolio</h2>
+        <p class="section__desc">Cada sección tiene su propio espacio. Haz clic en una tarjeta para descubrir más.</p>
+      </div>
+      <div class="hub-grid">
+        <a href="presentacion.html" class="hub-card hub-card--1 reveal reveal--scale">
+          <span class="hub-card__icon">🌺</span>
+          <h3 class="hub-card__title">Presentación</h3>
+          <p class="hub-card__desc">Conoce mi trayectoria, mis objetivos y mis logros dentro del curso.</p>
+          <span class="hub-card__arrow">→</span>
+        </a>
+        <a href="competencias.html" class="hub-card hub-card--2 reveal reveal--scale">
+          <span class="hub-card__icon">🤸</span>
+          <h3 class="hub-card__title">Competencias</h3>
+          <p class="hub-card__desc">Las cinco dimensiones que guían mi formación en corporeidad y motricidad.</p>
+          <span class="hub-card__arrow">→</span>
+        </a>
+        <a href="evidencias.html" class="hub-card hub-card--3 reveal reveal--scale">
+          <span class="hub-card__icon">🎬</span>
+          <h3 class="hub-card__title">Evidencias</h3>
+          <p class="hub-card__desc">Videos y documentos que demuestran mi aprendizaje a lo largo del ciclo.</p>
+          <span class="hub-card__arrow">→</span>
+        </a>
+        <a href="contacto.html" class="hub-card hub-card--4 reveal reveal--scale">
+          <span class="hub-card__icon">💬</span>
+          <h3 class="hub-card__title">Contacto</h3>
+          <p class="hub-card__desc">¿Tienes alguna pregunta? Escríbeme directamente por WhatsApp.</p>
+          <span class="hub-card__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <p class="footer__text">Mi Portafolio · Corporeidad y Motricidad</p>
+    <p class="footer__sub">Hecho con 🌸 y dedicación</p>
+  </footer>
+
+  <button class="scrolltop" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+  <script>
+    const stBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', ()=> stBtn.classList.toggle('scrolltop--show', window.scrollY > 400));
+    stBtn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+  </script>
+</body>
+</html>
