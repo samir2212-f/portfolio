@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evidencias — MI PORTAFOLIO</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__brand">
+      <span class="navbar__logo-icon">🌸</span>
+      <span class="navbar__title">MI PORTAFOLIO</span>
+    </div>
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="navbar__link">INICIO</a>
+      <a href="presentacion.html" class="navbar__link">PRESENTACIÓN</a>
+      <a href="competencias.html" class="navbar__link">COMPETENCIAS</a>
+      <a href="evidencias.html" class="navbar__link">EVIDENCIAS</a>      
+      <a href="Referencias.html" class="navbar__link">REFERENCIAS</a>
+      <a href="contacto.html" class="navbar__link">CONTACTO</a>
+    </nav>
+    <button class="navbar__hamburger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <a href="index.html" class="back-link">← Volver al inicio</a>
+      <span class="page-hero__badge"> 🌸 Referencias Bibliográficas </span>
+    </div>
+  </section>
+
+
+  <!-- ══ REFERENCIAS ══ -->
+  <section class="section" style="background:linear-gradient(145deg,#fdf4ff,#fce7f3);">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">📚 Bibliografía</span>
+        <h2 class="section__title">Referencias Bibliográficas</h2>
+      </div>
+      <ul class="biblio-list reveal">
+        <li>Buriticá, A. (2018). Esquemas sensoriomotores y cognición. <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=7076618" target="_blank">dialnet.unirioja.es</a></li>
+        <li>Colomer, E., &amp; Espinoza, R. (2015). Cuerpo y religación en Xavier Zubiri. <em>Teología y Vida.</em> <a href="https://www.scielo.cl/pdf/tv/v56n2/art05.pdf" target="_blank">scielo.cl</a></li>
+        <li>Gallahue, D. L., &amp; Ozmun, J. C. (2012). <em>Comprendiendo el desarrollo motor: bebés, niños, adolescentes y adultos.</em></li>
+        <li>Garófano, V. V. (2017). Importancia de la motricidad para el desarrollo integral del niño en la etapa de educación infantil. <em>Revista Digital de Educación.</em> <a href="https://dialnet.unirioja.es/descarga/articulo/6038088.pdf" target="_blank">dialnet.unirioja.es</a></li>
+        <li>Guzmán García, R. de J. (2018). Cuerpo y corporeidad como referentes de la investigación performativa. <em>Apuntes de Ciencia &amp; Sociedad.</em> <a href="https://dialnet.unirioja.es/descarga/articulo/7541455.pdf" target="_blank">dialnet.unirioja.es</a></li>
+        <li>Le Boulch, J. (1987). <em>La educación psicomotriz en la escuela primaria.</em> Paidós.</li>
+        <li>Piaget, J. (1969). <em>Psicología y pedagogía.</em></li>
+        <li>Vásquez Gallegos, L. K. (2021). Actividades motrices para el desarrollo del esquema corporal en niños de 4 años. <a href="https://alicia.concytec.gob.pe/vufind/Record/UCSS_f573adb60fb951fbc3152d0257a63927" target="_blank">concytec.gob.pe</a></li>
+        <li>Vygotsky, L. S. (1979). <em>El desarrollo de los procesos psicológicos superiores.</em></li>
+        <li>Wallon, H. (1987). <em>Del acto al pensamiento: ensayo de psicología comparada.</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--contact">
+    <div class="container container--center reveal">
+      <div class="section__head">
+        <span class="section__tag">💬 Hablemos</span>
+        <h2 class="section__title">¿Tienes alguna pregunta?</h2>
+        <p class="section__desc">Me encantaría conocer tu opinión.</p>
+      </div>
+      <a href="contacto.html" class="btn btn--whatsapp">Ir a contacto 💬</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">Mi Portafolio · Corporeidad y Motricidad</p>
+  </footer>
+
+  <button class="scrolltop" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+  <script>
+    const stBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', ()=> stBtn.classList.toggle('scrolltop--show', window.scrollY > 400));
+    stBtn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+  </script>
+  
+</body>
+</html>
