@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Presentación — MI PORTAFOLIO</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__brand">
+      <span class="navbar__logo-icon">🌸</span>
+      <span class="navbar__title">MI PORTAFOLIO</span>
+    </div>
+    <nav class="navbar__links" id="navLinks">
+      <a href="index.html" class="navbar__link">INICIO</a>
+      <a href="presentacion.html" class="navbar__link">PRESENTACIÓN</a>
+      <a href="competencias.html" class="navbar__link">COMPETENCIAS</a>
+      <a href="evidencias.html" class="navbar__link">EVIDENCIAS</a>      
+      <a href="Referencias.html" class="navbar__link">REFERENCIAS</a>
+      <a href="contacto.html" class="navbar__link">CONTACTO</a>
+    </nav>
+    <button class="navbar__hamburger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <a href="index.html" class="back-link">← Volver al inicio</a>
+      <span class="page-hero__badge">🌸 Sobre mí</span>
+      <h1 class="page-hero__title">Presentación del Portafolio</h1>
+      <p class="page-hero__desc">Conoce mi trayectoria, mis aprendizajes y mi compromiso con la educación física y el desarrollo integral.</p>
+    </div>
+  </section>
+
+  <!-- ══ PRESENTACIÓN GENERAL ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">📋 Presentación</span>
+        <h2 class="section__title">¿Qué es este portafolio?</h2>
+      </div>
+      <div class="sesion-block reveal">
+        <div class="sesion-block__body">
+          <p>Este portafolio recopila y sistematiza las unidades de aprendizaje del curso <strong>Corporeidad y Motricidad para el Aprendizaje y la Autonomía</strong>, acompañadas de sus evidencias. Es un espacio de reflexión crítica sobre mi proceso formativo como futura docente de Educación Primaria, donde evidencio el desarrollo de mis competencias en torno al cuerpo, el movimiento y la autonomía.</p>
+        </div>
+      </div>
+
+      <!-- Tarjetas resumen -->
+      <div class="cards" style="margin-top:2rem;">
+        <div class="card card--pink reveal reveal--scale">
+          <div class="card__emoji">🌺</div>
+          <h3 class="card__title">Mi Aprendizaje</h3>
+          <p class="card__text">Registro vivo de mis experiencias, conocimientos y competencias desarrolladas con dedicación y entusiasmo.</p>
+        </div>
+        <div class="card card--purple reveal reveal--scale">
+          <div class="card__emoji">🎯</div>
+          <h3 class="card__title">Mis Objetivos</h3>
+          <p class="card__text">Cada sección refleja mi compromiso con la excelencia académica y el crecimiento personal continuo.</p>
+        </div>
+        <div class="card card--rose reveal reveal--scale">
+          <div class="card__emoji">🏆</div>
+          <h3 class="card__title">Mis Logros</h3>
+          <p class="card__text">Evidencias concretas de proyectos realizados y habilidades desarrolladas con esfuerzo y pasión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ AUTORRETRATO ══ -->
+  <section class="section" style="background: linear-gradient(145deg, #fdf4ff, #fce7f3);">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">🪞 Autorretrato</span>
+        <h2 class="section__title">Autorretrato del Estudiante</h2>
+        <p class="section__desc">Quién soy, mis motivaciones y mi vocación docente.</p>
+      </div>
+      <div class="autorretrato reveal">
+        <div class="autorretrato__photo">
+          
+          <img src="imagen2.png" alt="Autorretrato de Claudia Paola Ato Fernández" class="autorretrato__img"/>
+        </div>
+        <div class="autorretrato__text">
+          <p>Mi nombre es <strong>Claudia Paola Ato Fernández</strong>, tengo 18 años, 
+           </p> <p>soy de Jaén y estudio el III ciclo de Educación Primaria en la EESPP </p>
+           <p>"Víctor Andrés Belaunde".</p>
+        </div>
+      </div>
+
+      <!-- Tarjetas de personalidad -->
+      <div class="cards" style="margin-top:2rem;">
+        <div class="card card--pink reveal reveal--scale">
+          <div class="card__emoji">🌸</div>
+          <h3 class="card__title">Mi Carácter</h3>
+          <p class="card__text">Soy responsable, amable y organizada. Disfruto interactuar con los demás, pues creo que las relaciones humanas son esenciales para el desarrollo personal y docente.</p>
+        </div>
+        <div class="card card--purple reveal reveal--scale">
+          <div class="card__emoji">❤️</div>
+          <h3 class="card__title">Mi Vocación</h3>
+          <p class="card__text">Elegí la educación porque el Perú necesita docentes con verdadera vocación. Quiero marcar una diferencia y ser esa maestra que inspire confianza y sea recordada con cariño.</p>
+        </div>
+        <div class="card card--rose reveal reveal--scale">
+          <div class="card__emoji">🎯</div>
+          <h3 class="card__title">Mi Reto Personal</h3>
+          <p class="card__text">Mi tendencia al perfeccionismo me impulsa a dar siempre lo mejor. Aunque me exige más tiempo, me motiva a crecer constantemente como persona y futura docente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MISIÓN Y VISIÓN ══ -->
+  <section class="section section--grad">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag section__tag--light">🏛️ Aspectos Preliminares</span>
+        <h2 class="section__title section__title--light">Misión y Visión</h2>
+        <p class="section__desc section__desc--light">Bases institucionales que orientan mi formación docente.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem;">
+        <div class="comp-card reveal reveal--left">
+          <div class="comp-card__circle comp-card__circle--1" style="font-size:1.5rem;">🎯</div>
+          <h3 class="comp-card__name">Misión</h3>
+          <p class="comp-card__desc">Institución intercultural de formación inicial docente que promueve la investigación, el liderazgo pedagógico y el compromiso social y ambiental, respetando la diversidad cultural del país.</p>
+        </div>
+        <div class="comp-card reveal reveal--right">
+          <div class="comp-card__circle comp-card__circle--4" style="font-size:1.5rem;">🔭</div>
+          <h3 class="comp-card__name">Visión</h3>
+          <p class="comp-card__desc">Al 2030, ser una escuela superior que fomenta la ciudadanía, la interculturalidad y el diálogo intergeneracional, con enfoque humanista integral en una sociedad democrática e inclusiva.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PRINCIPIOS ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">⚖️ Principios Institucionales</span>
+        <h2 class="section__title">Principios</h2>
+      </div>
+      <div class="prin-grid">
+        <div class="prin-card reveal">
+          <div class="prin-card__title">🎓 Calidad educativa</div>
+          <p class="prin-card__text">Adecuar la educación a las demandas del entorno de forma inclusiva y accesible, anticipando necesidades futuras de los beneficiarios.</p>
+        </div>
+        <div class="prin-card prin-card--purple reveal">
+          <div class="prin-card__title">🔗 Pertinencia</div>
+          <p class="prin-card__text">Vincular la oferta educativa con las necesidades del sector productivo y el desarrollo local, regional y nacional.</p>
+        </div>
+        <div class="prin-card prin-card--rose reveal">
+          <div class="prin-card__title">🌊 Flexibilidad</div>
+          <p class="prin-card__text">Adaptar la propuesta educativa con apertura y dinamismo a las demandas cambiantes del entorno social y productivo.</p>
+        </div>
+        <div class="prin-card prin-card--lav reveal">
+          <div class="prin-card__title">🤝 Inclusión social</div>
+          <p class="prin-card__text">Garantizar que todas las personas, sin discriminación, accedan a servicios de calidad y desarrollen plenamente sus habilidades.</p>
+        </div>
+        <div class="prin-card reveal">
+          <div class="prin-card__title">🔍 Transparencia</div>
+          <p class="prin-card__text">Contar con sistemas de información accesibles y actualizados que faciliten la toma de decisiones en todos los niveles.</p>
+        </div>
+        <div class="prin-card prin-card--purple reveal">
+          <div class="prin-card__title">⚖️ Equidad</div>
+          <p class="prin-card__text">Brindar el servicio educativo sin discriminación por origen, raza, sexo, idioma, religión u opinión.</p>
+        </div>
+        <div class="prin-card prin-card--rose reveal">
+          <div class="prin-card__title">🏅 Mérito</div>
+          <p class="prin-card__text">Reconocer los logros mediante mecanismos transparentes que impulsen el desarrollo personal y profesional.</p>
+        </div>
+        <div class="prin-card prin-card--lav reveal">
+          <div class="prin-card__title">🌍 Interculturalidad</div>
+          <p class="prin-card__text">Valorar la diversidad cultural, étnica y lingüística como riqueza, promoviendo la convivencia armónica y el respeto mutuo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ VALORES ══ -->
+  <section class="section" style="background:linear-gradient(145deg,#fdf4ff,#fce7f3);">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">💎 Valores</span>
+        <h2 class="section__title">Valores Institucionales</h2>
+      </div>
+      <div class="prin-grid">
+        <div class="prin-card reveal">
+          <div class="prin-card__title">✨ Honradez</div>
+          <p class="prin-card__text">Comportarse de manera sincera y coherente con los demás y consigo mismo, actuando conforme a la verdad y el deber ser.</p>
+        </div>
+        <div class="prin-card prin-card--purple reveal">
+          <div class="prin-card__title">⚖️ Justicia</div>
+          <p class="prin-card__text">Dar a cada persona lo que le corresponde con respeto y equidad, respaldado por la Constitución y los Derechos Humanos.</p>
+        </div>
+        <div class="prin-card prin-card--rose reveal">
+          <div class="prin-card__title">🤲 Solidaridad</div>
+          <p class="prin-card__text">Actuar en servicio de los demás con altruismo y colaboración, haciéndonos más humanos y responsables con el prójimo.</p>
+        </div>
+        <div class="prin-card prin-card--lav reveal">
+          <div class="prin-card__title">🕊️ Espiritualidad de comunión</div>
+          <p class="prin-card__text">Respetar la pluralidad de creencias y promover la trascendencia de las personas mediante la comunión y el plan pastoral institucional.</p>
+        </div>
+        <div class="prin-card reveal">
+          <div class="prin-card__title">💡 Creatividad</div>
+          <p class="prin-card__text">Desarrollar la personalidad y el talento para hacer cultura, transformarse y transformar la realidad con iniciativa y originalidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact">
+    <div class="container container--center reveal">
+      <div class="section__head">
+        <span class="section__tag">➡️ Siguiente</span>
+        <h2 class="section__title">Descubre mis competencias</h2>
+        <p class="section__desc">Las cinco dimensiones que guían mi formación.</p>
+      </div>
+      <a href="competencias.html" class="btn btn--purple">Ver competencias 🤸</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">Mi Portafolio · Corporeidad y Motricidad</p>
+  </footer>
+
+  <button class="scrolltop" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+  <script>
+    const stBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', ()=> stBtn.classList.toggle('scrolltop--show', window.scrollY > 400));
+    stBtn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+  </script>
+</body>
+</html>
